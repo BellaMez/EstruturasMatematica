@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe6f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #cc0066;
+}
+
+textarea, input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0559e;
+}
+
+.matrix-box {
+  background-color: #fff0f5;
+  border: 1px solid #ffb6c1;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+}

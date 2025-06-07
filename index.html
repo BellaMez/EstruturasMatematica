@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Matrizes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Matrizes</h1>
+
+    <div class="input-section">
+      <h2>Adicionar Nova Matriz</h2>
+      <input type="text" id="matrixName" placeholder="Nome da matriz (ex: A)" />
+      <textarea id="matrixValues" placeholder="Ex: [[1,2],[3,4]]"></textarea>
+      <button onclick="addMatrix()">Adicionar Matriz</button>
+    </div>
+
+    <div id="matricesList"></div>
+
+    <div class="operations-section">
+      <h2>Operações entre Matrizes</h2>
+      <label>Selecione Matrizes para Operar:</label>
+      <select id="selectedMatrices" multiple></select><br/>
+      <button onclick="performOperation('add')">Somar</button>
+      <button onclick="performOperation('subtract')">Subtrair</button>
+      <button onclick="performOperation('multiply')">Multiplicar</button>
+    </div>
+
+    <div class="system-section">
+      <h2>Resolver Sistema Linear Ax = B</h2>
+      <textarea id="matrixA" placeholder="Matriz A (ex: [[1,2],[3,4]])"></textarea>
+      <textarea id="matrixB" placeholder="Matriz B (ex: [[5],[11]])"></textarea>
+      <button onclick="solveSystem()">Resolver</button>
+    </div>
+
+    <div id="resultSection">
+      <h2>Resultado</h2>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
